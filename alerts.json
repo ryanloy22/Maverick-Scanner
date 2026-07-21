@@ -1,0 +1,30 @@
+[
+  {
+    "alerted_at": "2026-07-21T13:36:19.989932+00:00",
+    "ticker": "ONDO-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.40372,
+    "stop_loss": 0.343142,
+    "target1": 0.476414,
+    "target2": 0.524877,
+    "target3": 0.597571,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.024231,
+    "vol_ratio": 2.29,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 26412.090362,
+      "dollar_risk": 1600.0,
+      "notional": 10663.09,
+      "account": "crypto",
+      "leverage": 10
+    }
+  }
+]
