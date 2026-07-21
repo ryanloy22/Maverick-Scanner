@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Maverick Scanner</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:     #0c0806;
+  --surf:   #14100b;
+  --bord:   #2a2015;
+  --amber:  #ff9d2e;
+  --green:  #00ff88;
+  --red:    #ff3366;
+  --yellow: #ffd166;
+  --dim:    #7a6a56;
+  --text:   #e8dcd0;
+  --mono:   'Share Tech Mono', monospace;
+  --sans:   'Barlow', sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;min-height:100vh;}
+
+header{border-bottom:1px solid var(--bord);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(20,16,11,0.97);position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:8px;}
+.logo{font-family:var(--mono);font-size:16px;color:var(--amber);letter-spacing:2px;}
+.logo span{color:var(--dim);}
+#ts{font-family:var(--mono);font-size:11px;color:var(--dim);}
+
+main{padding:20px;max-width:1400px;margin:0 auto;}
+
+.tagline{font-size:12px;color:var(--dim);margin-bottom:20px;font-style:italic;}
+
+.stat-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:24px;}
+.stat-card{background:var(--surf);border:1px solid var(--bord);border-radius:6px;padding:12px 16px;}
+.stat-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dim);margin-bottom:5px;}
+.stat-val{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--amber);}
+.stat-sub{font-size:11px;color:var(--dim);margin-top:3px;}
+
+.backtest-banner{background:linear-gradient(90deg,rgba(255,157,46,.12),transparent);border:1px solid rgba(255,157,46,.3);border-radius:6px;padding:12px 16px;margin-bottom:24px;font-family:var(--mono);font-size:12px;color:var(--text);}
+.backtest-banner b{color:var(--amber);}
+
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--bord);}
+.sh-title{font-family:var(--mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);}
+.sh-count{font-family:var(--mono);font-size:11px;color:var(--amber);}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:28px;}
+.card{background:var(--surf);border:1px solid var(--bord);border-radius:8px;padding:16px;position:relative;overflow:hidden;transition:transform .15s,border-color .15s;}
+.card:hover{transform:translateY(-2px);border-color:var(--amber);}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.card.long::before{background:linear-gradient(90deg,var(--green),transparent);}
+.card.short::before{background:linear-gradient(90deg,var(--red),transparent);}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+.ticker{font-family:var(--mono);font-size:16px;font-weight:700;}
+.dir{font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:3px;letter-spacing:1px;}
+.dir.long{background:rgba(0,255,136,.12);color:var(--green);border:1px solid rgba(0,255,136,.3);}
+.dir.short{background:rgba(255,51,102,.12);color:var(--red);border:1px solid rgba(255,51,102,.3);}
+.card-type{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;}
+.levels{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-family:var(--mono);font-size:12px;margin-bottom:10px;}
+.lvl-lbl{color:var(--dim);}
+.lvl-val{text-align:right;}
+.card-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--dim);border-top:1px solid var(--bord);padding-top:8px;margin-top:4px;}
+.score-badge{font-family:var(--mono);color:var(--amber);}
+.notes{font-size:10px;color:var(--dim);margin-top:8px;font-family:var(--mono);}
+.timestamp{font-size:10px;color:var(--dim);margin-top:6px;font-family:var(--mono);}
+
+.empty{color:var(--dim);font-family:var(--mono);font-size:12px;padding:30px 0;text-align:center;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🐆 MAVERICK <span>// momentum breakout scanner</span></div>
+  <div id="ts">loading...</div>
+</header>
+
+<main>
+  <div class="tagline">Lean 3-gate breakout system — Donchian range + volume surge + volatility expansion — sized aggressively on a universe picked for amplitude, not stability.</div>
+
+  <div class="backtest-banner">
+    <b>Backtested:</b> +0.117R/trade expectancy, 560 trades, 2yr daily bars, longs only, trend-aligned hard gate.
+    Stocks/ETFs +0.195R · Crypto +0.022R (near breakeven — watch separately).
+    Shorts are disabled by default — backtested negative on every filter slice tried.
+  </div>
+
+  <div class="stat-bar" id="stats"></div>
+
+  <div class="sh">
+    <span class="sh-title">Alerts</span>
+    <span class="sh-count" id="alert-count"></span>
+  </div>
+  <div class="grid" id="alert-grid"></div>
+</main>
+
+<script>
+function fmtNum(n, decimals) {
+  if (n === null || n === undefined) return '—';
+  return Number(n).toFixed(decimals ?? 4);
+}
+
+function timeAgo(iso) {
+  const d = new Date(iso);
+  const diffMs = Date.now() - d.getTime();
+  const mins = Math.floor(diffMs / 60000);
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  return Math.floor(hrs / 24) + 'd ago';
+}
+
+function renderStats(alerts) {
+  const total = alerts.length;
+  const longs = alerts.filter(a => a.direction === 'LONG').length;
+  const shorts = alerts.filter(a => a.direction === 'SHORT').length;
+  const crypto = alerts.filter(a => a.type === 'crypto').length;
+  const stocks = total - crypto;
+  const avgScore = total ? (alerts.reduce((s,a) => s + (a.score||0), 0) / total).toFixed(1) : '—';
+  const avgRR = total ? (alerts.reduce((s,a) => s + (a.rr_ratio||0), 0) / total).toFixed(2) : '—';
+
+  const stats = [
+    { lbl: 'Total Alerts', val: total, sub: 'all-time' },
+    { lbl: 'Long / Short', val: longs + ' / ' + shorts, sub: shorts === 0 ? 'shorts disabled' : '' },
+    { lbl: 'Stock/ETF / Crypto', val: stocks + ' / ' + crypto, sub: '' },
+    { lbl: 'Avg Score', val: avgScore, sub: 'min gate: 6' },
+    { lbl: 'Avg R/R', val: avgRR + ':1', sub: 'to T1' },
+  ];
+
+  document.getElementById('stats').innerHTML = stats.map(s => `
+    <div class="stat-card">
+      <div class="stat-lbl">${s.lbl}</div>
+      <div class="stat-val">${s.val}</div>
+      <div class="stat-sub">${s.sub}</div>
+    </div>
+  `).join('');
+}
+
+function renderAlerts(alerts) {
+  document.getElementById('alert-count').textContent = alerts.length + ' shown';
+  const grid = document.getElementById('alert-grid');
+
+  if (!alerts.length) {
+    grid.innerHTML = '<div class="empty">No alerts yet — run scanner.py to generate the first one.</div>';
+    return;
+  }
+
+  const sorted = [...alerts].sort((a,b) => new Date(b.alerted_at) - new Date(a.alerted_at));
+
+  grid.innerHTML = sorted.map(a => {
+    const dirClass = a.direction === 'LONG' ? 'long' : 'short';
+    const arrow = a.direction === 'LONG' ? '▲' : '▼';
+    const pos = a.position || {};
+    return `
+    <div class="card ${dirClass}">
+      <div class="card-top">
+        <span class="ticker">${a.ticker}</span>
+        <span class="dir ${dirClass}">${arrow} ${a.direction}</span>
+      </div>
+      <div class="card-type">${a.type || ''}</div>
+      <div class="levels">
+        <span class="lvl-lbl">Entry</span><span class="lvl-val">${fmtNum(a.entry)}</span>
+        <span class="lvl-lbl">Stop</span><span class="lvl-val">${fmtNum(a.stop_loss)}</span>
+        <span class="lvl-lbl">T1</span><span class="lvl-val">${fmtNum(a.target1)}</span>
+        <span class="lvl-lbl">T2</span><span class="lvl-val">${fmtNum(a.target2)}</span>
+        <span class="lvl-lbl">T3</span><span class="lvl-val">${fmtNum(a.target3)}</span>
+        <span class="lvl-lbl">Vol ratio</span><span class="lvl-val">${fmtNum(a.vol_ratio,2)}x</span>
+      </div>
+      <div class="card-meta">
+        <span class="score-badge">score ${a.score}</span>
+        <span>R/R ${fmtNum(a.rr_ratio,2)}:1</span>
+        <span>risk $${fmtNum(pos.dollar_risk,0)}</span>
+      </div>
+      <div class="notes">${(a.notes || []).join(' · ')}</div>
+      <div class="timestamp">${timeAgo(a.alerted_at)}</div>
+    </div>`;
+  }).join('');
+}
+
+async function loadData() {
+  try {
+    const url = 'alerts.json?v=' + Date.now();
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('no alerts.json yet');
+    const alerts = await res.json();
+    renderStats(alerts);
+    renderAlerts(alerts);
+    document.getElementById('ts').textContent = 'loaded ' + new Date().toLocaleString();
+  } catch (e) {
+    renderStats([]);
+    renderAlerts([]);
+    document.getElementById('ts').textContent = 'no data yet';
+  }
+}
+
+loadData();
+setInterval(loadData, 60000);
+</script>
+</body>
+</html>
