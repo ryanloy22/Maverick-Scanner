@@ -59,6 +59,8 @@ main{padding:20px;max-width:1400px;margin:0 auto;}
 .levels{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-family:var(--mono);font-size:12px;margin-bottom:10px;}
 .lvl-lbl{color:var(--dim);}
 .lvl-val{text-align:right;}
+.pct-up{color:var(--green);}
+.pct-dn{color:var(--red);}
 .card-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--dim);border-top:1px solid var(--bord);padding-top:8px;margin-top:4px;}
 .score-badge{font-family:var(--mono);color:var(--amber);}
 .notes{font-size:10px;color:var(--dim);margin-top:8px;font-family:var(--mono);}
@@ -96,6 +98,14 @@ main{padding:20px;max-width:1400px;margin:0 auto;}
 function fmtNum(n, decimals) {
   if (n === null || n === undefined) return '—';
   return Number(n).toFixed(decimals ?? 4);
+}
+
+function pctMove(entry, level, direction) {
+  if (!entry || level === null || level === undefined) return '';
+  const raw = (level - entry) / entry * 100;
+  const signed = direction === 'LONG' ? raw : -raw;
+  const cls = signed >= 0 ? 'pct-up' : 'pct-dn';
+  return ` <span class="${cls}">(${signed >= 0 ? '+' : ''}${signed.toFixed(1)}%)</span>`;
 }
 
 function timeAgo(iso) {
@@ -158,10 +168,10 @@ function renderAlerts(alerts) {
       <div class="card-type">${a.type || ''}</div>
       <div class="levels">
         <span class="lvl-lbl">Entry</span><span class="lvl-val">${fmtNum(a.entry)}</span>
-        <span class="lvl-lbl">Stop</span><span class="lvl-val">${fmtNum(a.stop_loss)}</span>
-        <span class="lvl-lbl">T1</span><span class="lvl-val">${fmtNum(a.target1)}</span>
-        <span class="lvl-lbl">T2</span><span class="lvl-val">${fmtNum(a.target2)}</span>
-        <span class="lvl-lbl">T3</span><span class="lvl-val">${fmtNum(a.target3)}</span>
+        <span class="lvl-lbl">Stop</span><span class="lvl-val">${fmtNum(a.stop_loss)}${pctMove(a.entry, a.stop_loss, a.direction)}</span>
+        <span class="lvl-lbl">T1</span><span class="lvl-val">${fmtNum(a.target1)}${pctMove(a.entry, a.target1, a.direction)}</span>
+        <span class="lvl-lbl">T2</span><span class="lvl-val">${fmtNum(a.target2)}${pctMove(a.entry, a.target2, a.direction)}</span>
+        <span class="lvl-lbl">T3</span><span class="lvl-val">${fmtNum(a.target3)}${pctMove(a.entry, a.target3, a.direction)}</span>
         <span class="lvl-lbl">Vol ratio</span><span class="lvl-val">${fmtNum(a.vol_ratio,2)}x</span>
       </div>
       <div class="card-meta">
