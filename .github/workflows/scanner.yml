@@ -1,0 +1,70 @@
+name: Maverick Scanner
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [run-scanner]
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Dedup — skip if scanner ran within last 50 minutes
+        id: dedup
+        run: |
+          if [ -f alerts.json ]; then
+            LAST_SCAN=$(git log -1 --format=%cI -- alerts.json)
+            NOW_TS=$(date +%s)
+            LAST_TS=$(date -d "$LAST_SCAN" +%s 2>/dev/null || echo 0)
+            DIFF=$((NOW_TS - LAST_TS))
+            echo "Last scan: $LAST_SCAN ($DIFF seconds ago)"
+            if [ "$DIFF" -lt 3000 ]; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "⏭ Skipping — scanner ran $DIFF seconds ago (< 50 min)"
+            else
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Python
+        if: steps.dedup.outputs.skip != 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        if: steps.dedup.outputs.skip != 'true'
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scanner
+        if: steps.dedup.outputs.skip != 'true'
+        run: python scanner.py
+
+      - name: Commit scan results
+        if: steps.dedup.outputs.skip != 'true'
+        run: |
+          git config --global user.name  "Maverick Bot"
+          git config --global user.email "bot@maverick-scanner"
+          git fetch origin master
+          git reset --soft origin/master
+          git add alerts.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "scan: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push origin master
