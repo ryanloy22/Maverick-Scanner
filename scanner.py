@@ -295,6 +295,52 @@ def save_alert(signal):
         json.dump(alerts, f, indent=2)
 
 
+def update_open_positions():
+    """Mark existing alerts as stopped/target-hit based on current price,
+    so the dashboard doesn't keep showing invalidated setups as live."""
+    if not os.path.exists(ALERTS_PATH):
+        return
+    with open(ALERTS_PATH) as f:
+        alerts = json.load(f)
+
+    changed = False
+    for a in alerts:
+        if a.get("status", "open") != "open":
+            continue
+        is_crypto = a.get("type") == "crypto"
+        df = fetch(a["ticker"], is_crypto)
+        if df is None:
+            continue
+        price = float(get_col(df, "Close").iloc[-1])
+        long_dir = a["direction"] == "LONG"
+
+        stopped = price <= a["stop_loss"] if long_dir else price >= a["stop_loss"]
+        if stopped:
+            a["status"] = "stopped"
+            a["closed_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            a["close_price"] = round(price, 6)
+            changed = True
+            continue
+
+        hit = None
+        for label in ("target3", "target2", "target1"):
+            level = a.get(label)
+            if level is None:
+                continue
+            if (long_dir and price >= level) or (not long_dir and price <= level):
+                hit = label
+                break
+        if hit:
+            a["status"] = f"{hit}_hit"
+            a["closed_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+            a["close_price"] = round(price, 6)
+            changed = True
+
+    if changed:
+        with open(ALERTS_PATH, "w") as f:
+            json.dump(alerts, f, indent=2)
+
+
 def format_telegram(signal):
     arr = "▲" if signal["direction"] == "LONG" else "▼"
     pos = signal["position"]
@@ -341,6 +387,8 @@ def run_scanner():
 
     btc_trend = get_btc_trend()
     print(f"  BTC trend: {btc_trend}")
+
+    update_open_positions()
 
     universe = (
         [(t, False) for t in LEVERAGED_ETFS] +
