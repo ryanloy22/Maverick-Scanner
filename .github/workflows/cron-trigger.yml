@@ -1,0 +1,40 @@
+name: Scanner Heartbeat
+
+# Fires 4x per hour at :05, :20, :35, :50 — avoids the :00 peak-load
+# window where GitHub throttles scheduled workflows. Even if GitHub
+# skips 3 of 4 attempts, the scanner still runs within 15 minutes.
+#
+# REQUIRED: Add a repo secret named GH_PAT
+#   GitHub → Settings → Secrets → Actions → New repository secret
+#   Name: GH_PAT
+#   Value: a GitHub Personal Access Token with `repo` scope
+#   (Settings → Developer settings → Personal access tokens → classic)
+
+on:
+  schedule:
+    - cron: '5,20,35,50 12-23 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch scanner
+        run: |
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/${{ github.repository }}/dispatches \
+            -d '{"event_type":"run-scanner"}')
+          echo "GitHub API response: $HTTP_STATUS"
+          if [ "$HTTP_STATUS" = "204" ]; then
+            echo "✅ Scanner triggered successfully"
+          elif [ "$HTTP_STATUS" = "401" ]; then
+            echo "❌ GH_PAT secret missing or expired — add repo secret named GH_PAT"
+            exit 1
+          else
+            echo "⚠ Unexpected status $HTTP_STATUS"
+            exit 1
+          fi
