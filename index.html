@@ -193,11 +193,18 @@ async function loadData() {
     const alerts = await res.json();
     renderStats(alerts);
     renderAlerts(alerts);
-    document.getElementById('ts').textContent = 'loaded ' + new Date().toLocaleString();
   } catch (e) {
     renderStats([]);
     renderAlerts([]);
-    document.getElementById('ts').textContent = 'no data yet';
+  }
+
+  try {
+    const statusRes = await fetch('status.json?v=' + Date.now(), { cache: 'no-store' });
+    if (!statusRes.ok) throw new Error('no status.json yet');
+    const status = await statusRes.json();
+    document.getElementById('ts').textContent = 'last ran ' + timeAgo(status.last_run) + ' · BTC ' + status.btc_trend;
+  } catch (e) {
+    document.getElementById('ts').textContent = 'last run unknown';
   }
 }
 
