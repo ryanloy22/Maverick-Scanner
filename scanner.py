@@ -86,6 +86,7 @@ CONFIG = {
 
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 ALERTS_PATH = os.path.join(OUTPUT_DIR, "alerts.json")
+STATUS_PATH = os.path.join(OUTPUT_DIR, "status.json")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -368,6 +369,14 @@ def run_scanner():
 
     print(f"\n  Scanned {len(universe)} tickers, {found} new alert(s).")
     print("━" * 60 + "\n")
+
+    with open(STATUS_PATH, "w") as f:
+        json.dump({
+            "last_run": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "btc_trend": btc_trend,
+            "scanned": len(universe),
+            "found": found,
+        }, f, indent=2)
 
 
 if __name__ == "__main__":
