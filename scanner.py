@@ -34,9 +34,14 @@ warnings.filterwarnings("ignore")
 
 # 3x leveraged ETFs — same setups as the underlying index, 3x the move,
 # 3x the whipsaw. Bull side; direction is set by which way it breaks.
+# Inverse/bear-side leverage included too — since SHORT signals are
+# disabled by default, a LONG breakout on the inverse ETF is how this
+# system captures downside momentum without needing short logic.
 LEVERAGED_ETFS = [
     "TQQQ", "SOXL", "SPXL", "UPRO", "TECL", "TNA", "FAS",
     "LABU", "NAIL", "WEBL", "BOIL", "YINN",
+    "SQQQ", "SOXS", "SPXS", "TZA", "FAZ", "LABD", "TECS",
+    "DRV", "KOLD", "YANG", "NUGT", "DUST",
 ]
 
 # High-beta single names — story stocks, retail-driven, prone to
@@ -45,6 +50,9 @@ MOMENTUM_STOCKS = [
     "MSTR", "COIN", "PLTR", "SMCI", "IONQ", "RIVN", "CVNA", "SOFI",
     "MARA", "RIOT", "AFRM", "UPST", "ARM", "AI", "RGTI", "CLSK",
     "APLD", "HOOD", "DKNG", "RKLB",
+    "NVDA", "TSLA", "AMD", "GME", "AMC", "LCID", "NKLA", "FUBO",
+    "PATH", "SNAP", "PYPL", "SQ", "ROKU", "NET", "DDOG", "SNOW",
+    "ENPH", "PLUG", "TLRY", "DJT",
 ]
 
 # Wider altcoin basket — beyond majors, where the real convexity lives
@@ -53,6 +61,9 @@ CRYPTO_ALTS = [
     "BTC-USD", "ETH-USD", "SOL-USD", "AVAX-USD", "LINK-USD",
     "ARB11841-USD", "OP-USD", "INJ-USD", "SUI20947-USD", "DOGE-USD",
     "WIF-USD", "SEI-USD", "ONDO-USD", "AAVE-USD", "BNB-USD",
+    "MATIC-USD", "DOT-USD", "FET-USD", "AGIX-USD", "RNDR-USD",
+    "OCEAN-USD", "VIRTUAL-USD", "UNI7083-USD", "CRV-USD", "MKR-USD",
+    "PEPE24478-USD", "BONK-USD", "TIA-USD", "POLYX-USD",
 ]
 
 CONFIG = {
