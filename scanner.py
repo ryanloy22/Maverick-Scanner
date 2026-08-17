@@ -50,8 +50,8 @@ MOMENTUM_STOCKS = [
     "MSTR", "COIN", "PLTR", "SMCI", "IONQ", "RIVN", "CVNA", "SOFI",
     "MARA", "RIOT", "AFRM", "UPST", "ARM", "AI", "RGTI", "CLSK",
     "APLD", "HOOD", "DKNG", "RKLB",
-    "NVDA", "TSLA", "AMD", "GME", "AMC", "LCID", "NKLA", "FUBO",
-    "PATH", "SNAP", "PYPL", "SQ", "ROKU", "NET", "DDOG", "SNOW",
+    "NVDA", "TSLA", "AMD", "GME", "AMC", "LCID", "FUBO",
+    "PATH", "SNAP", "PYPL", "XYZ", "ROKU", "NET", "DDOG", "SNOW",
     "ENPH", "PLUG", "TLRY", "DJT",
 ]
 
@@ -61,7 +61,7 @@ CRYPTO_ALTS = [
     "BTC-USD", "ETH-USD", "SOL-USD", "AVAX-USD", "LINK-USD",
     "ARB11841-USD", "OP-USD", "INJ-USD", "SUI20947-USD", "DOGE-USD",
     "WIF-USD", "SEI-USD", "ONDO-USD", "AAVE-USD", "BNB-USD",
-    "MATIC-USD", "DOT-USD", "FET-USD", "AGIX-USD", "RNDR-USD",
+    "POL28321-USD", "DOT-USD", "FET-USD", "AGIX-USD", "RENDER-USD",
     "OCEAN-USD", "VIRTUAL-USD", "UNI7083-USD", "CRV-USD", "MKR-USD",
     "PEPE24478-USD", "BONK-USD", "TIA-USD", "POLYX-USD",
 ]
