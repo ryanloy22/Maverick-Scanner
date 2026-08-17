@@ -118,7 +118,8 @@ function timeAgo(iso) {
   return Math.floor(hrs / 24) + 'd ago';
 }
 
-function renderStats(alerts) {
+function renderStats(allAlerts) {
+  const alerts = allAlerts.filter(a => (a.status || 'open') === 'open');
   const total = alerts.length;
   const longs = alerts.filter(a => a.direction === 'LONG').length;
   const shorts = alerts.filter(a => a.direction === 'SHORT').length;
@@ -128,7 +129,7 @@ function renderStats(alerts) {
   const avgRR = total ? (alerts.reduce((s,a) => s + (a.rr_ratio||0), 0) / total).toFixed(2) : '—';
 
   const stats = [
-    { lbl: 'Total Alerts', val: total, sub: 'all-time' },
+    { lbl: 'Open Alerts', val: total, sub: 'currently active' },
     { lbl: 'Long / Short', val: longs + ' / ' + shorts, sub: shorts === 0 ? 'shorts disabled' : '' },
     { lbl: 'Stock/ETF / Crypto', val: stocks + ' / ' + crypto, sub: '' },
     { lbl: 'Avg Score', val: avgScore, sub: 'min gate: 6' },
@@ -144,12 +145,15 @@ function renderStats(alerts) {
   `).join('');
 }
 
-function renderAlerts(alerts) {
-  document.getElementById('alert-count').textContent = alerts.length + ' shown';
+function renderAlerts(allAlerts) {
+  const alerts = allAlerts.filter(a => (a.status || 'open') === 'open');
+  const closedCount = allAlerts.length - alerts.length;
+  document.getElementById('alert-count').textContent =
+    alerts.length + ' shown' + (closedCount ? ` · ${closedCount} closed hidden` : '');
   const grid = document.getElementById('alert-grid');
 
   if (!alerts.length) {
-    grid.innerHTML = '<div class="empty">No alerts yet — run scanner.py to generate the first one.</div>';
+    grid.innerHTML = '<div class="empty">No current alerts — run scanner.py to generate one.</div>';
     return;
   }
 
