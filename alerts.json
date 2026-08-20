@@ -434,5 +434,34 @@
     "status": "target3_hit",
     "closed_at": "2026-08-20T13:52:18.413906+00:00",
     "close_price": 3e-06
+  },
+  {
+    "alerted_at": "2026-08-20T23:05:27.521465+00:00",
+    "ticker": "CRV-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.2854,
+    "stop_loss": 0.248402,
+    "target1": 0.329797,
+    "target2": 0.359396,
+    "target3": 0.403793,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.014799,
+    "vol_ratio": 1.71,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 43245.736374,
+      "dollar_risk": 1600.0,
+      "notional": 12342.33,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
