@@ -200,5 +200,174 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-08-20T00:02:47.250090+00:00",
+    "ticker": "LABU",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 341.549988,
+    "stop_loss": 287.45014,
+    "target1": 406.469805,
+    "target2": 449.749683,
+    "target3": 514.669499,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 21.639939,
+    "vol_ratio": 1.89,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.9+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 1.774497,
+      "dollar_risk": 96.0,
+      "notional": 606.08,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-20T00:02:50.419268+00:00",
+    "ticker": "NUGT",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 186.389999,
+    "stop_loss": 156.858387,
+    "target1": 221.827934,
+    "target2": 245.453224,
+    "target3": 280.891159,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 11.812645,
+    "vol_ratio": 1.71,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 3.250754,
+      "dollar_risk": 96.0,
+      "notional": 605.91,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-20T00:02:58.419746+00:00",
+    "ticker": "ETH-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 2253.600098,
+    "stop_loss": 2079.189895,
+    "target1": 2462.892341,
+    "target2": 2602.420503,
+    "target3": 2811.712747,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 69.764081,
+    "vol_ratio": 4.28,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.3+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 9.173775,
+      "dollar_risk": 1600.0,
+      "notional": 20674.02,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-20T00:02:59.257445+00:00",
+    "ticker": "SOL-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 85.480003,
+    "stop_loss": 79.235828,
+    "target1": 92.973014,
+    "target2": 97.968354,
+    "target3": 105.461364,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 2.49767,
+    "vol_ratio": 3.4,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.4+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 256.238801,
+      "dollar_risk": 1600.0,
+      "notional": 21903.29,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-20T00:03:00.231604+00:00",
+    "ticker": "LINK-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 10.576,
+    "stop_loss": 9.683742,
+    "target1": 11.646711,
+    "target2": 12.360517,
+    "target3": 13.431228,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.356903,
+    "vol_ratio": 2.79,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.8+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 1793.20203,
+      "dollar_risk": 1600.0,
+      "notional": 18964.91,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-20T00:03:02.568325+00:00",
+    "ticker": "BNB-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 628.190002,
+    "stop_loss": 597.989895,
+    "target1": 664.430132,
+    "target2": 688.590218,
+    "target3": 724.830348,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 12.080043,
+    "vol_ratio": 1.79,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.8+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 52.979943,
+      "dollar_risk": 1600.0,
+      "notional": 33281.47,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
