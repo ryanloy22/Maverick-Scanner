@@ -349,7 +349,10 @@
       "notional": 18964.91,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-21T20:55:09.643988+00:00",
+    "close_price": 11.761
   },
   {
     "alerted_at": "2026-08-20T00:03:02.568325+00:00",
