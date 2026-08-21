@@ -800,5 +800,33 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-08-21T14:42:01.431223+00:00",
+    "ticker": "HOOD",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 105.440002,
+    "stop_loss": 90.135234,
+    "target1": 123.805725,
+    "target2": 136.049539,
+    "target3": 154.415262,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 6.121907,
+    "vol_ratio": 1.34,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.3+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 6.272555,
+      "dollar_risk": 96.0,
+      "notional": 661.38,
+      "account": "stocks",
+      "leverage": 4
+    }
   }
 ]
