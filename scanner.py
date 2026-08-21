@@ -352,18 +352,29 @@ def update_open_positions():
             json.dump(alerts, f, indent=2)
 
 
+def pct_move(entry, level, direction):
+    """% distance from entry, signed so + is favorable to the trade
+    direction — matches the dashboard's pctMove() convention."""
+    if not entry:
+        return ""
+    raw = (level - entry) / entry * 100
+    signed = raw if direction == "LONG" else -raw
+    return f" ({signed:+.1f}%)"
+
+
 def format_telegram(signal):
     arr = "▲" if signal["direction"] == "LONG" else "▼"
     pos = signal["position"]
+    entry, direction = signal["entry"], signal["direction"]
     lines = [
         f"\U0001f406 <b>MAVERICK BREAKOUT</b>",
         f"<b>{signal['ticker']}</b>  {arr}{signal['direction']}  |  Score: {signal['score']}  |  R/R: {signal['rr_ratio']}:1",
         "",
-        f"Entry:  {signal['entry']}",
-        f"Stop:   {signal['stop_loss']}",
-        f"T1:     {signal['target1']}",
-        f"T2:     {signal['target2']}",
-        f"T3:     {signal['target3']}",
+        f"Entry:  {entry}",
+        f"Stop:   {signal['stop_loss']}{pct_move(entry, signal['stop_loss'], direction)}",
+        f"T1:     {signal['target1']}{pct_move(entry, signal['target1'], direction)}",
+        f"T2:     {signal['target2']}{pct_move(entry, signal['target2'], direction)}",
+        f"T3:     {signal['target3']}{pct_move(entry, signal['target3'], direction)}",
         "",
         f"Size: {pos['units']}  (≈${pos['notional']:,.0f} notional, {pos['leverage']}x)",
         f"Risk: ${pos['dollar_risk']:.0f}  ({CONFIG['RISK_PCT_PER_TRADE']}% of acct)",
