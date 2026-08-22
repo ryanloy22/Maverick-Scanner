@@ -1087,5 +1087,35 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-08-22T20:30:27.306566+00:00",
+    "ticker": "DOGE-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.09441,
+    "stop_loss": 0.084587,
+    "target1": 0.106198,
+    "target2": 0.114057,
+    "target3": 0.125845,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.003929,
+    "vol_ratio": 7.07,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x7.1+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 162875.133834,
+      "dollar_risk": 1600.0,
+      "notional": 15377.04,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
