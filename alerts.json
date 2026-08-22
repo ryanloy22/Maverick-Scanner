@@ -1024,6 +1024,38 @@
       "notional": 22765.46,
       "account": "crypto",
       "leverage": 10
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-22T14:00:15.464127+00:00",
+    "close_price": 4e-06
+  },
+  {
+    "alerted_at": "2026-08-22T14:00:30.387255+00:00",
+    "ticker": "UNI7083-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 4.3001,
+    "stop_loss": 3.690884,
+    "target1": 5.031159,
+    "target2": 5.518532,
+    "target3": 6.249591,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.243686,
+    "vol_ratio": 2.85,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.9+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 2626.326399,
+      "dollar_risk": 1600.0,
+      "notional": 11293.47,
+      "account": "crypto",
+      "leverage": 10
     }
   }
 ]
