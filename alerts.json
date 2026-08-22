@@ -663,7 +663,10 @@
       "notional": 15177.55,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-22T12:51:25.242569+00:00",
+    "close_price": 125.349998
   },
   {
     "alerted_at": "2026-08-21T13:00:00.272260+00:00",
@@ -722,7 +725,10 @@
       "notional": 17918.89,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target2_hit",
+    "closed_at": "2026-08-22T12:51:25.663530+00:00",
+    "close_price": 0.10751
   },
   {
     "alerted_at": "2026-08-21T13:00:03.074352+00:00",
@@ -842,6 +848,182 @@
       "notional": 661.38,
       "account": "stocks",
       "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:32.046378+00:00",
+    "ticker": "NUGT",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 207.880005,
+    "stop_loss": 177.48642,
+    "target1": 244.352306,
+    "target2": 268.667174,
+    "target3": 305.139475,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 12.157434,
+    "vol_ratio": 1.39,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.4+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 3.158561,
+      "dollar_risk": 96.0,
+      "notional": 656.6,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:36.806440+00:00",
+    "ticker": "HOOD",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 108.129997,
+    "stop_loss": 92.825229,
+    "target1": 126.495719,
+    "target2": 138.739534,
+    "target3": 157.105257,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 6.121907,
+    "vol_ratio": 2.74,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.7+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 6.272555,
+      "dollar_risk": 96.0,
+      "notional": 678.25,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:46.361993+00:00",
+    "ticker": "AAVE-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 125.43,
+    "stop_loss": 111.414877,
+    "target1": 142.248148,
+    "target2": 153.460247,
+    "target3": 170.278395,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 5.606049,
+    "vol_ratio": 4.62,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.6+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 114.162391,
+      "dollar_risk": 1600.0,
+      "notional": 14319.39,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:47.337449+00:00",
+    "ticker": "BNB-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 695.400024,
+    "stop_loss": 652.088277,
+    "target1": 747.374121,
+    "target2": 782.023519,
+    "target3": 833.997616,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 17.324699,
+    "vol_ratio": 2.88,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.9+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 36.941479,
+      "dollar_risk": 1600.0,
+      "notional": 25689.11,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:48.297003+00:00",
+    "ticker": "POL28321-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.1076,
+    "stop_loss": 0.095475,
+    "target1": 0.12215,
+    "target2": 0.131849,
+    "target3": 0.146399,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.00485,
+    "vol_ratio": 8.12,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x8.1+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 131962.102258,
+      "dollar_risk": 1600.0,
+      "notional": 14199.12,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-22T12:51:51.610767+00:00",
+    "ticker": "PEPE24478-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 4e-06,
+    "stop_loss": 4e-06,
+    "target1": 4e-06,
+    "target2": 5e-06,
+    "target3": 5e-06,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.0,
+    "vol_ratio": 7.57,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x7.6+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 5663050293.333538,
+      "dollar_risk": 1600.0,
+      "notional": 22765.46,
+      "account": "crypto",
+      "leverage": 10
     }
   }
 ]
