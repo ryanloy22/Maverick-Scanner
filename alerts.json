@@ -1057,5 +1057,35 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-08-22T17:27:05.504727+00:00",
+    "ticker": "WIF-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.20352,
+    "stop_loss": 0.175972,
+    "target1": 0.236577,
+    "target2": 0.258615,
+    "target3": 0.291673,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.011019,
+    "vol_ratio": 3.27,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.3+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 58081.070124,
+      "dollar_risk": 1600.0,
+      "notional": 11820.66,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
