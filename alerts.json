@@ -1321,6 +1321,9 @@
       "notional": 23048.62,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-23T12:52:18.757509+00:00",
+    "close_price": 4e-06
   }
 ]
