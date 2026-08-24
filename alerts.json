@@ -1331,5 +1331,120 @@
     "status": "target1_hit",
     "closed_at": "2026-08-23T12:52:18.757509+00:00",
     "close_price": 4e-06
+  },
+  {
+    "alerted_at": "2026-08-24T00:00:57.160562+00:00",
+    "ticker": "NUGT",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 207.880005,
+    "stop_loss": 177.48642,
+    "target1": 244.352306,
+    "target2": 268.667174,
+    "target3": 305.139475,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 12.157434,
+    "vol_ratio": 1.39,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.4+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 3.158561,
+      "dollar_risk": 96.0,
+      "notional": 656.6,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-24T00:01:01.726901+00:00",
+    "ticker": "HOOD",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 108.129997,
+    "stop_loss": 92.825229,
+    "target1": 126.495719,
+    "target2": 138.739534,
+    "target3": 157.105257,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 6.121907,
+    "vol_ratio": 2.74,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.7+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 6.272555,
+      "dollar_risk": 96.0,
+      "notional": 678.25,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-08-24T00:01:07.447112+00:00",
+    "ticker": "AAVE-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 141.860001,
+    "stop_loss": 124.496346,
+    "target1": 162.696386,
+    "target2": 176.58731,
+    "target3": 197.423696,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 6.945462,
+    "vol_ratio": 3.56,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.6+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 92.1465,
+      "dollar_risk": 1600.0,
+      "notional": 13071.9,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-24T00:01:09.488484+00:00",
+    "ticker": "UNI7083-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 4.53,
+    "stop_loss": 3.837168,
+    "target1": 5.361399,
+    "target2": 5.915665,
+    "target3": 6.747064,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.277133,
+    "vol_ratio": 2.24,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.2+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 2309.36072,
+      "dollar_risk": 1600.0,
+      "notional": 10461.4,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
