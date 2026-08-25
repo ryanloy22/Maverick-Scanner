@@ -1000,7 +1000,10 @@
       "notional": 14199.12,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-25T12:58:30.162113+00:00",
+    "close_price": 0.12309
   },
   {
     "alerted_at": "2026-08-22T12:51:51.610767+00:00",
@@ -1271,7 +1274,10 @@
       "notional": 14038.13,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-25T12:58:31.625695+00:00",
+    "close_price": 0.12309
   },
   {
     "alerted_at": "2026-08-23T00:01:16.286739+00:00",
@@ -1594,6 +1600,36 @@
       "units": 13017.648969,
       "dollar_risk": 1600.0,
       "notional": 10316.39,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-08-25T12:58:54.569107+00:00",
+    "ticker": "POL28321-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.12307,
+    "stop_loss": 0.108437,
+    "target1": 0.140629,
+    "target2": 0.152335,
+    "target3": 0.169895,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.005853,
+    "vol_ratio": 2.33,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 109344.014876,
+      "dollar_risk": 1600.0,
+      "notional": 13456.97,
       "account": "crypto",
       "leverage": 10
     }
