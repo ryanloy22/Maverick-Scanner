@@ -177,7 +177,10 @@
       "notional": 589.43,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-08-25T17:47:13.047937+00:00",
+    "close_price": 216.830002
   },
   {
     "alerted_at": "2026-08-19T22:02:47.968617+00:00",
