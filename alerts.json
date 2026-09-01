@@ -2012,5 +2012,34 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-01T16:26:09.372074+00:00",
+    "ticker": "CRV-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.3662,
+    "stop_loss": 0.306839,
+    "target1": 0.437433,
+    "target2": 0.484921,
+    "target3": 0.556154,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.023744,
+    "vol_ratio": 2.96,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.0+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 26953.855654,
+      "dollar_risk": 1600.0,
+      "notional": 9870.5,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
