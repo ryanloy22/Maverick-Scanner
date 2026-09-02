@@ -2056,5 +2056,35 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-02T19:28:18.714731+00:00",
+    "ticker": "ARB11841-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.12448,
+    "stop_loss": 0.104009,
+    "target1": 0.149045,
+    "target2": 0.165422,
+    "target3": 0.189987,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.008188,
+    "vol_ratio": 3.65,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.7+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 78159.965499,
+      "dollar_risk": 1600.0,
+      "notional": 9729.35,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
