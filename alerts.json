@@ -2086,5 +2086,92 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-03T16:14:27.128755+00:00",
+    "ticker": "HOOD",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 123.449997,
+    "stop_loss": 106.78607,
+    "target1": 143.446709,
+    "target2": 156.777851,
+    "target3": 176.774564,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 6.665571,
+    "vol_ratio": 1.81,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.8+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 5.760947,
+      "dollar_risk": 96.0,
+      "notional": 711.19,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-09-03T16:14:32.272283+00:00",
+    "ticker": "SNOW",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 369.170013,
+    "stop_loss": 324.529782,
+    "target1": 422.738291,
+    "target2": 458.450477,
+    "target3": 512.018755,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 17.856093,
+    "vol_ratio": 3.1,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.1+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 2.150526,
+      "dollar_risk": 96.0,
+      "notional": 793.91,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-09-03T16:14:35.425402+00:00",
+    "ticker": "ARB11841-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.13075,
+    "stop_loss": 0.108723,
+    "target1": 0.157182,
+    "target2": 0.174803,
+    "target3": 0.201236,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.008811,
+    "vol_ratio": 4.08,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.1+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 72639.017045,
+      "dollar_risk": 1600.0,
+      "notional": 9497.55,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
