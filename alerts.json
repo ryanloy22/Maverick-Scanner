@@ -701,7 +701,10 @@
       "notional": 29025.97,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-03T21:45:25.524355+00:00",
+    "close_price": 725.530029
   },
   {
     "alerted_at": "2026-08-21T13:00:01.328982+00:00",
@@ -860,7 +863,10 @@
       "notional": 661.38,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-03T21:45:25.640363+00:00",
+    "close_price": 124.720001
   },
   {
     "alerted_at": "2026-08-22T12:51:32.046378+00:00",
@@ -1881,7 +1887,10 @@
       "notional": 10116.12,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-03T21:45:27.328102+00:00",
+    "close_price": 6.4154
   },
   {
     "alerted_at": "2026-08-31T00:21:21.989131+00:00",
@@ -2032,7 +2041,10 @@
       "notional": 9922.6,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-03T21:45:27.628424+00:00",
+    "close_price": 6.4154
   },
   {
     "alerted_at": "2026-09-01T16:26:09.372074+00:00",
@@ -2176,6 +2188,63 @@
       "units": 72639.017045,
       "dollar_risk": 1600.0,
       "notional": 9497.55,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-03T21:45:34.242118+00:00",
+    "ticker": "MSTR",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 144.820007,
+    "stop_loss": 122.994297,
+    "target1": 171.01086,
+    "target2": 188.471428,
+    "target3": 214.66228,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 8.730284,
+    "vol_ratio": 1.69,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 4.398482,
+      "dollar_risk": 96.0,
+      "notional": 636.99,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-09-03T21:45:44.405153+00:00",
+    "ticker": "UNI7083-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 6.4154,
+    "stop_loss": 5.409135,
+    "target1": 7.622918,
+    "target2": 8.42793,
+    "target3": 9.635447,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.402506,
+    "vol_ratio": 2.11,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.1+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1590.038713,
+      "dollar_risk": 1600.0,
+      "notional": 10200.73,
       "account": "crypto",
       "leverage": 10
     }
