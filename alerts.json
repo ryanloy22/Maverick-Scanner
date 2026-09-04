@@ -2248,5 +2248,64 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-04T01:17:03.620728+00:00",
+    "ticker": "ARB11841-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.14322,
+    "stop_loss": 0.120295,
+    "target1": 0.17073,
+    "target2": 0.18907,
+    "target3": 0.21658,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.00917,
+    "vol_ratio": 4.52,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.5+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 69793.184223,
+      "dollar_risk": 1600.0,
+      "notional": 9995.78,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-04T01:17:06.587377+00:00",
+    "ticker": "UNI7083-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 6.4029,
+    "stop_loss": 5.418813,
+    "target1": 7.583804,
+    "target2": 8.371074,
+    "target3": 9.551978,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.393635,
+    "vol_ratio": 2.3,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1625.872747,
+      "dollar_risk": 1600.0,
+      "notional": 10410.3,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
