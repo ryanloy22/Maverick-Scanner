@@ -2109,7 +2109,10 @@
       "notional": 9729.35,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-05T21:07:43.174867+00:00",
+    "close_price": 0.16482
   },
   {
     "alerted_at": "2026-09-03T16:14:27.128755+00:00",
@@ -2196,7 +2199,10 @@
       "notional": 9497.55,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-05T21:07:43.542510+00:00",
+    "close_price": 0.16482
   },
   {
     "alerted_at": "2026-09-03T21:45:34.242118+00:00",
@@ -2339,6 +2345,66 @@
       "units": 30.020272,
       "dollar_risk": 1600.0,
       "notional": 23106.9,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-05T21:07:55.322824+00:00",
+    "ticker": "ARB11841-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.16431,
+    "stop_loss": 0.135393,
+    "target1": 0.19901,
+    "target2": 0.222143,
+    "target3": 0.256843,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.011567,
+    "vol_ratio": 2.16,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.2+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 55331.611424,
+      "dollar_risk": 1600.0,
+      "notional": 9091.54,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-05T21:07:58.707344+00:00",
+    "ticker": "UNI7083-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 7.1014,
+    "stop_loss": 5.958941,
+    "target1": 8.472351,
+    "target2": 9.386319,
+    "target3": 10.75727,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.456984,
+    "vol_ratio": 1.38,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.4+2",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1400.487503,
+      "dollar_risk": 1600.0,
+      "notional": 9945.42,
       "account": "crypto",
       "leverage": 10
     }
