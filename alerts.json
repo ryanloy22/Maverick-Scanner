@@ -988,7 +988,10 @@
       "notional": 25689.11,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-05T14:57:46.333768+00:00",
+    "close_price": 769.5
   },
   {
     "alerted_at": "2026-08-22T12:51:48.297003+00:00",
@@ -1271,7 +1274,10 @@
       "notional": 25704.25,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-05T14:57:46.615660+00:00",
+    "close_price": 769.5
   },
   {
     "alerted_at": "2026-08-23T00:01:14.652391+00:00",
@@ -2304,6 +2310,35 @@
       "units": 1625.872747,
       "dollar_risk": 1600.0,
       "notional": 10410.3,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-05T14:58:00.762063+00:00",
+    "ticker": "BNB-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 769.710022,
+    "stop_loss": 716.412703,
+    "target1": 833.666805,
+    "target2": 876.30466,
+    "target3": 940.261442,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 21.318928,
+    "vol_ratio": 1.51,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 30.020272,
+      "dollar_risk": 1600.0,
+      "notional": 23106.9,
       "account": "crypto",
       "leverage": 10
     }
