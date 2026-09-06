@@ -640,7 +640,10 @@
       "notional": 17615.99,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-06T21:39:19.538592+00:00",
+    "close_price": 12.943
   },
   {
     "alerted_at": "2026-08-21T12:59:59.273175+00:00",
@@ -2497,6 +2500,35 @@
       "units": 1424.002633,
       "dollar_risk": 1600.0,
       "notional": 10231.17,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-06T21:39:32.884760+00:00",
+    "ticker": "TIA-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.4306,
+    "stop_loss": 0.369137,
+    "target1": 0.504355,
+    "target2": 0.553525,
+    "target3": 0.627281,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.024585,
+    "vol_ratio": 2.31,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 26032.056351,
+      "dollar_risk": 1600.0,
+      "notional": 11209.4,
       "account": "crypto",
       "leverage": 10
     }
