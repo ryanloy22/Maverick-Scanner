@@ -2707,5 +2707,63 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-08T01:06:59.759388+00:00",
+    "ticker": "INJ-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 6.321,
+    "stop_loss": 5.363967,
+    "target1": 7.46944,
+    "target2": 8.235067,
+    "target3": 9.383507,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.382813,
+    "vol_ratio": 2.46,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.5+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1671.832939,
+      "dollar_risk": 1600.0,
+      "notional": 10567.66,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-08T01:07:01.473165+00:00",
+    "ticker": "DOT-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 1.0655,
+    "stop_loss": 0.942465,
+    "target1": 1.213142,
+    "target2": 1.31157,
+    "target3": 1.459212,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.049214,
+    "vol_ratio": 3.27,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.3+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 13004.430998,
+      "dollar_risk": 1600.0,
+      "notional": 13856.22,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
