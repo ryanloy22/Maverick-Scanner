@@ -2801,5 +2801,34 @@
     "status": "target1_hit",
     "closed_at": "2026-09-08T19:31:53.867957+00:00",
     "close_price": 1.236
+  },
+  {
+    "alerted_at": "2026-09-13T01:21:46.602655+00:00",
+    "ticker": "POLYX-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.040263,
+    "stop_loss": 0.035153,
+    "target1": 0.046395,
+    "target2": 0.050483,
+    "target3": 0.056615,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.002044,
+    "vol_ratio": 4.52,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.5+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 313121.796542,
+      "dollar_risk": 1600.0,
+      "notional": 12607.31,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
