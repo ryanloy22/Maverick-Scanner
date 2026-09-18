@@ -586,7 +586,10 @@
       "notional": 19320.8,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-18T21:35:51.587937+00:00",
+    "close_price": 2628.909912
   },
   {
     "alerted_at": "2026-08-21T12:59:55.684699+00:00",
@@ -3180,6 +3183,62 @@
       "notional": 9840.87,
       "account": "crypto",
       "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-18T21:36:03.543132+00:00",
+    "ticker": "MSTR",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 153.919998,
+    "stop_loss": 130.540068,
+    "target1": 181.975914,
+    "target2": 200.679859,
+    "target3": 228.735775,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 9.351972,
+    "vol_ratio": 1.98,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.0+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 4.106086,
+      "dollar_risk": 96.0,
+      "notional": 632.01,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-09-18T21:36:08.758476+00:00",
+    "ticker": "AMD",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 559.820007,
+    "stop_loss": 499.809962,
+    "target1": 631.832062,
+    "target2": 679.840098,
+    "target3": 751.852152,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 24.004018,
+    "vol_ratio": 1.74,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 1.599732,
+      "dollar_risk": 96.0,
+      "notional": 895.56,
+      "account": "stocks",
+      "leverage": 4
     }
   }
 ]
