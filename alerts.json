@@ -2740,7 +2740,10 @@
       "notional": 10333.52,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-19T15:44:32.652786+00:00",
+    "close_price": 7.496
   },
   {
     "alerted_at": "2026-09-07T20:47:43.003562+00:00",
@@ -3154,7 +3157,10 @@
       "notional": 15500.04,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-19T15:44:35.059986+00:00",
+    "close_price": 9.381
   },
   {
     "alerted_at": "2026-09-18T19:03:46.974053+00:00",
@@ -3353,7 +3359,10 @@
       "notional": 15448.71,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-19T15:44:35.766766+00:00",
+    "close_price": 9.392
   },
   {
     "alerted_at": "2026-09-19T01:39:09.513242+00:00",
