@@ -3537,5 +3537,63 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-19T18:13:51.727247+00:00",
+    "ticker": "SUI20947-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.8614,
+    "stop_loss": 0.746075,
+    "target1": 0.99979,
+    "target2": 1.09205,
+    "target3": 1.230439,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.04613,
+    "vol_ratio": 1.71,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 13873.854929,
+      "dollar_risk": 1600.0,
+      "notional": 11950.94,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-19T18:13:56.852956+00:00",
+    "ticker": "PEPE24478-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 4e-06,
+    "stop_loss": 3e-06,
+    "target1": 5e-06,
+    "target2": 6e-06,
+    "target3": 7e-06,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.0,
+    "vol_ratio": 1.73,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1760774239.784463,
+      "dollar_risk": 1600.0,
+      "notional": 7395.25,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
