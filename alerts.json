@@ -3973,7 +3973,10 @@
       "notional": 13670.1,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-09-24T01:16:33.877823+00:00",
+    "close_price": 10.194
   },
   {
     "alerted_at": "2026-09-21T01:09:56.489821+00:00",
