@@ -3152,7 +3152,10 @@
       "notional": 11486.36,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target2_hit",
+    "closed_at": "2026-09-24T16:56:40.666157+00:00",
+    "close_price": 0.51663
   },
   {
     "alerted_at": "2026-09-18T19:03:45.330784+00:00",
@@ -3473,7 +3476,10 @@
       "notional": 8981.84,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-24T16:56:41.525687+00:00",
+    "close_price": 8.597
   },
   {
     "alerted_at": "2026-09-19T01:39:12.919577+00:00",
@@ -3502,7 +3508,10 @@
       "notional": 11342.06,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target2_hit",
+    "closed_at": "2026-09-24T16:56:41.584695+00:00",
+    "close_price": 0.51663
   },
   {
     "alerted_at": "2026-09-19T01:39:13.772702+00:00",
@@ -3826,7 +3835,10 @@
       "notional": 12118.23,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-24T16:56:42.423582+00:00",
+    "close_price": 0.51663
   },
   {
     "alerted_at": "2026-09-20T18:38:29.597452+00:00",
@@ -5188,6 +5200,95 @@
       "units": 20979.437255,
       "dollar_risk": 1600.0,
       "notional": 10584.13,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-24T16:57:01.760663+00:00",
+    "ticker": "INJ-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 8.6,
+    "stop_loss": 7.052371,
+    "target1": 10.457156,
+    "target2": 11.695259,
+    "target3": 13.552414,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.619052,
+    "vol_ratio": 1.54,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1033.839252,
+      "dollar_risk": 1600.0,
+      "notional": 8891.02,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-24T16:57:02.955634+00:00",
+    "ticker": "ONDO-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.51798,
+    "stop_loss": 0.433688,
+    "target1": 0.61913,
+    "target2": 0.686564,
+    "target3": 0.787714,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.033717,
+    "vol_ratio": 4.39,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.4+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 18981.63816,
+      "dollar_risk": 1600.0,
+      "notional": 9832.11,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-24T16:57:04.976751+00:00",
+    "ticker": "FET-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.22293,
+    "stop_loss": 0.183611,
+    "target1": 0.270113,
+    "target2": 0.301568,
+    "target3": 0.348752,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.015728,
+    "vol_ratio": 1.49,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 40692.545358,
+      "dollar_risk": 1600.0,
+      "notional": 9071.59,
       "account": "crypto",
       "leverage": 10
     }
