@@ -6036,5 +6036,62 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-27T00:24:30.793055+00:00",
+    "ticker": "DDOG",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 268.130005,
+    "stop_loss": 236.713699,
+    "target1": 305.829573,
+    "target2": 330.962618,
+    "target3": 368.662185,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 12.566523,
+    "vol_ratio": 1.48,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 3.055738,
+      "dollar_risk": 96.0,
+      "notional": 819.34,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-09-27T00:24:39.280193+00:00",
+    "ticker": "RENDER-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 1.9989,
+    "stop_loss": 1.727173,
+    "target1": 2.324972,
+    "target2": 2.542353,
+    "target3": 2.868425,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.108691,
+    "vol_ratio": 1.49,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 5888.271865,
+      "dollar_risk": 1600.0,
+      "notional": 11770.07,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
