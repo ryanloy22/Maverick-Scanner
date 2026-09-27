@@ -4628,7 +4628,10 @@
       "notional": 11416.66,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-09-27T19:53:26.919364+00:00",
+    "close_price": 1.27
   },
   {
     "alerted_at": "2026-09-22T00:41:33.199770+00:00",
@@ -6120,6 +6123,35 @@
       "units": 8233.01606,
       "dollar_risk": 1600.0,
       "notional": 10256.69,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-09-27T19:53:42.101413+00:00",
+    "ticker": "VIRTUAL-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.819987,
+    "stop_loss": 0.699797,
+    "target1": 0.964216,
+    "target2": 1.060368,
+    "target3": 1.204596,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.048076,
+    "vol_ratio": 1.32,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.3+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 13312.2127,
+      "dollar_risk": 1600.0,
+      "notional": 10915.84,
       "account": "crypto",
       "leverage": 10
     }
