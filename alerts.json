@@ -6093,5 +6093,35 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-09-27T16:47:31.316946+00:00",
+    "ticker": "SUI20947-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 1.2458,
+    "stop_loss": 1.051461,
+    "target1": 1.479007,
+    "target2": 1.634479,
+    "target3": 1.867686,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.077736,
+    "vol_ratio": 1.36,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.4+2",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 8233.01606,
+      "dollar_risk": 1600.0,
+      "notional": 10256.69,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
