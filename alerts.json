@@ -6616,5 +6616,63 @@
       "account": "stocks",
       "leverage": 4
     }
+  },
+  {
+    "alerted_at": "2026-10-02T17:45:14.153694+00:00",
+    "ticker": "AAVE-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 181.720001,
+    "stop_loss": 155.087492,
+    "target1": 213.679012,
+    "target2": 234.98502,
+    "target3": 266.944031,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 10.653004,
+    "vol_ratio": 2.0,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.0+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 60.076953,
+      "dollar_risk": 1600.0,
+      "notional": 10917.18,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-10-02T17:45:17.168379+00:00",
+    "ticker": "MKR-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 2091.212891,
+    "stop_loss": 1672.913325,
+    "target1": 2593.17237,
+    "target2": 2927.812022,
+    "target3": 3429.771502,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 167.319826,
+    "vol_ratio": 4.13,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.1+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 3.82501,
+      "dollar_risk": 1600.0,
+      "notional": 7998.91,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
