@@ -6686,5 +6686,34 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-10-03T00:40:27.890509+00:00",
+    "ticker": "AAVE-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 179.699997,
+    "stop_loss": 154.390937,
+    "target1": 210.070869,
+    "target2": 230.318117,
+    "target3": 260.688989,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 10.123624,
+    "vol_ratio": 2.07,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.1+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 63.218468,
+      "dollar_risk": 1600.0,
+      "notional": 11360.36,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
