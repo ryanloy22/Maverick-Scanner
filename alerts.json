@@ -6718,5 +6718,34 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-10-05T01:12:14.527884+00:00",
+    "ticker": "FET-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.26036,
+    "stop_loss": 0.212279,
+    "target1": 0.318057,
+    "target2": 0.356521,
+    "target3": 0.414218,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.019232,
+    "vol_ratio": 1.66,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 33277.466703,
+      "dollar_risk": 1600.0,
+      "notional": 8664.12,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
