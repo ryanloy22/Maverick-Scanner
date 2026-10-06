@@ -4893,7 +4893,10 @@
       "notional": 12568.31,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-06T18:12:27.190094+00:00",
+    "close_price": 2.197
   },
   {
     "alerted_at": "2026-09-22T00:41:41.660014+00:00",
@@ -6744,6 +6747,35 @@
       "units": 33277.466703,
       "dollar_risk": 1600.0,
       "notional": 8664.12,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-10-06T18:12:46.700899+00:00",
+    "ticker": "RENDER-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 2.1956,
+    "stop_loss": 1.901904,
+    "target1": 2.548035,
+    "target2": 2.782992,
+    "target3": 3.135427,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.117478,
+    "vol_ratio": 1.69,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 5447.812212,
+      "dollar_risk": 1600.0,
+      "notional": 11961.22,
       "account": "crypto",
       "leverage": 10
     }
