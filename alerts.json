@@ -5460,7 +5460,10 @@
       "notional": 1210.91,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-13T19:08:43.964353+00:00",
+    "close_price": 27.424999
   },
   {
     "alerted_at": "2026-09-24T23:21:28.925183+00:00",
@@ -5517,7 +5520,10 @@
       "notional": 1211.45,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-13T19:08:44.189313+00:00",
+    "close_price": 27.424999
   },
   {
     "alerted_at": "2026-09-25T01:48:39.306359+00:00",
@@ -7306,6 +7312,35 @@
       "notional": 874.08,
       "account": "stocks",
       "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-10-13T19:09:07.834775+00:00",
+    "ticker": "OP-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.15405,
+    "stop_loss": 0.124086,
+    "target1": 0.190006,
+    "target2": 0.213977,
+    "target3": 0.249934,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.011985,
+    "vol_ratio": 1.52,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 53398.050096,
+      "dollar_risk": 1600.0,
+      "notional": 8225.97,
+      "account": "crypto",
+      "leverage": 10
     }
   }
 ]
