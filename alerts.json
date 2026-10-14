@@ -7342,5 +7342,34 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-10-14T01:58:35.101771+00:00",
+    "ticker": "OP-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.15908,
+    "stop_loss": 0.128181,
+    "target1": 0.196159,
+    "target2": 0.220879,
+    "target3": 0.257958,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.01236,
+    "vol_ratio": 2.11,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.1+3",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 51780.848309,
+      "dollar_risk": 1600.0,
+      "notional": 8237.3,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
