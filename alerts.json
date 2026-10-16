@@ -4477,7 +4477,10 @@
       "notional": 770.43,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-10-16T16:27:04.543666+00:00",
+    "close_price": 195.539993
   },
   {
     "alerted_at": "2026-09-21T22:00:49.420765+00:00",
@@ -6953,7 +6956,10 @@
       "notional": 1207.49,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-10-16T16:27:07.923285+00:00",
+    "close_price": 187.350006
   },
   {
     "alerted_at": "2026-10-09T22:42:06.193151+00:00",
@@ -7037,7 +7043,10 @@
       "notional": 1203.99,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-10-16T16:27:08.340863+00:00",
+    "close_price": 187.339996
   },
   {
     "alerted_at": "2026-10-10T01:56:31.514301+00:00",
@@ -7150,7 +7159,10 @@
       "notional": 1203.99,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-10-16T16:27:08.683302+00:00",
+    "close_price": 187.339996
   },
   {
     "alerted_at": "2026-10-11T02:15:40.192303+00:00",
@@ -7264,7 +7276,10 @@
       "notional": 1203.99,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-10-16T16:27:09.102933+00:00",
+    "close_price": 187.339996
   },
   {
     "alerted_at": "2026-10-12T00:28:24.866454+00:00",
@@ -7462,6 +7477,36 @@
       "units": 914.823091,
       "dollar_risk": 1600.0,
       "notional": 7862.9,
+      "account": "crypto",
+      "leverage": 10
+    }
+  },
+  {
+    "alerted_at": "2026-10-16T16:27:22.314567+00:00",
+    "ticker": "TIA-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 0.6848,
+    "stop_loss": 0.524482,
+    "target1": 0.877182,
+    "target2": 1.005436,
+    "target3": 1.197818,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.064127,
+    "vol_ratio": 3.14,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.1+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 9980.161139,
+      "dollar_risk": 1600.0,
+      "notional": 6834.41,
       "account": "crypto",
       "leverage": 10
     }
