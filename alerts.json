@@ -7436,5 +7436,34 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-10-16T01:06:50.814644+00:00",
+    "ticker": "INJ-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 8.595,
+    "stop_loss": 6.846028,
+    "target1": 10.693767,
+    "target2": 12.092944,
+    "target3": 14.191711,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 0.699589,
+    "vol_ratio": 1.74,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.7+2",
+      "TrendAlign+2",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 914.823091,
+      "dollar_risk": 1600.0,
+      "notional": 7862.9,
+      "account": "crypto",
+      "leverage": 10
+    }
   }
 ]
