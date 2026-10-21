@@ -7617,5 +7617,61 @@
       "account": "crypto",
       "leverage": 10
     }
+  },
+  {
+    "alerted_at": "2026-10-21T20:30:16.087177+00:00",
+    "ticker": "YANG",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 35.060001,
+    "stop_loss": 31.905084,
+    "target1": 38.845902,
+    "target2": 41.369835,
+    "target3": 45.155736,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 1.261967,
+    "vol_ratio": 1.35,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.4+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 30.428693,
+      "dollar_risk": 96.0,
+      "notional": 1066.83,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-10-21T20:30:22.148377+00:00",
+    "ticker": "ROKU",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 157.779999,
+    "stop_loss": 152.844199,
+    "target1": 163.702959,
+    "target2": 167.651599,
+    "target3": 173.574559,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 1.97432,
+    "vol_ratio": 4.81,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.8+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 19.449735,
+      "dollar_risk": 96.0,
+      "notional": 3068.78,
+      "account": "stocks",
+      "leverage": 4
+    }
   }
 ]
