@@ -1995,7 +1995,10 @@
       "notional": 857.5,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-23T20:16:30.568467+00:00",
+    "close_price": 12.46
   },
   {
     "alerted_at": "2026-09-01T01:50:48.190501+00:00",
@@ -2023,7 +2026,10 @@
       "notional": 857.5,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-23T20:16:30.674865+00:00",
+    "close_price": 12.46
   },
   {
     "alerted_at": "2026-09-01T01:50:54.849281+00:00",
