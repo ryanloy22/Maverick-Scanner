@@ -3693,7 +3693,10 @@
       "notional": 7395.25,
       "account": "crypto",
       "leverage": 10
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-10-28T22:38:26.378380+00:00",
+    "close_price": 5e-06
   },
   {
     "alerted_at": "2026-09-20T00:18:50.465853+00:00",
@@ -7906,6 +7909,36 @@
       "notional": 1116.59,
       "account": "stocks",
       "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-10-28T22:38:59.288708+00:00",
+    "ticker": "PEPE24478-USD",
+    "type": "crypto",
+    "direction": "LONG",
+    "entry": 5e-06,
+    "stop_loss": 4e-06,
+    "target1": 6e-06,
+    "target2": 7e-06,
+    "target3": 9e-06,
+    "score": 10,
+    "rr_ratio": 1.2,
+    "atr": 0.0,
+    "vol_ratio": 3.05,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.0+3",
+      "TrendAlign+2",
+      "VolExpand+1",
+      "BTCbullish+1"
+    ],
+    "position": {
+      "units": 1373102061.894265,
+      "dollar_risk": 1600.0,
+      "notional": 6906.7,
+      "account": "crypto",
+      "leverage": 10
     }
   }
 ]
