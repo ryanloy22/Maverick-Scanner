@@ -8273,5 +8273,90 @@
       "account": "stocks",
       "leverage": 4
     }
+  },
+  {
+    "alerted_at": "2026-11-05T00:33:14.590884+00:00",
+    "ticker": "FAS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 187.399994,
+    "stop_loss": 169.789794,
+    "target1": 208.532233,
+    "target2": 222.620393,
+    "target3": 243.752632,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 7.04408,
+    "vol_ratio": 2.3,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 5.451386,
+      "dollar_risk": 96.0,
+      "notional": 1021.59,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T00:33:22.566105+00:00",
+    "ticker": "AMC",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 3.52,
+    "stop_loss": 3.065792,
+    "target1": 4.065049,
+    "target2": 4.428415,
+    "target3": 4.973464,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 0.181683,
+    "vol_ratio": 1.98,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.0+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 211.357123,
+      "dollar_risk": 96.0,
+      "notional": 743.98,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T00:33:24.130407+00:00",
+    "ticker": "XYZ",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 87.629997,
+    "stop_loss": 80.011307,
+    "target1": 96.772425,
+    "target2": 102.867377,
+    "target3": 112.009805,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 3.047476,
+    "vol_ratio": 4.14,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x4.1+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 12.600592,
+      "dollar_risk": 96.0,
+      "notional": 1104.19,
+      "account": "stocks",
+      "leverage": 4
+    }
   }
 ]
