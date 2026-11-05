@@ -7959,7 +7959,10 @@
       "notional": 1116.59,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-05T19:47:08.643440+00:00",
+    "close_price": 344.519989
   },
   {
     "alerted_at": "2026-10-27T01:57:22.062912+00:00",
@@ -7987,7 +7990,10 @@
       "notional": 1116.59,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-05T19:47:08.795936+00:00",
+    "close_price": 344.519989
   },
   {
     "alerted_at": "2026-10-28T22:38:59.288708+00:00",
@@ -8075,7 +8081,10 @@
       "notional": 817.32,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-11-05T19:47:09.378505+00:00",
+    "close_price": 47.929199
   },
   {
     "alerted_at": "2026-10-31T01:37:24.235204+00:00",
@@ -8103,7 +8112,10 @@
       "notional": 817.32,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-11-05T19:47:09.594140+00:00",
+    "close_price": 47.929199
   },
   {
     "alerted_at": "2026-11-01T02:39:03.349541+00:00",
@@ -8131,7 +8143,10 @@
       "notional": 817.32,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-11-05T19:47:09.694818+00:00",
+    "close_price": 47.929199
   },
   {
     "alerted_at": "2026-11-02T00:59:35.077514+00:00",
@@ -8159,7 +8174,10 @@
       "notional": 817.32,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "target1_hit",
+    "closed_at": "2026-11-05T19:47:09.852025+00:00",
+    "close_price": 47.9203
   },
   {
     "alerted_at": "2026-11-04T00:09:41.890346+00:00",
@@ -8355,6 +8373,122 @@
       "units": 12.600592,
       "dollar_risk": 96.0,
       "notional": 1104.19,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T19:47:14.343774+00:00",
+    "ticker": "SQQQ",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 47.91,
+    "stop_loss": 41.614254,
+    "target1": 55.464895,
+    "target2": 60.501491,
+    "target3": 68.056386,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 2.518298,
+    "vol_ratio": 1.8,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.8+2",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 15.248392,
+      "dollar_risk": 96.0,
+      "notional": 730.55,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T19:47:15.497501+00:00",
+    "ticker": "SOXS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 75.230003,
+    "stop_loss": 57.808431,
+    "target1": 96.13589,
+    "target2": 110.073149,
+    "target3": 130.979036,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 6.968629,
+    "vol_ratio": 1.46,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.5+2",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 5.51041,
+      "dollar_risk": 96.0,
+      "notional": 414.55,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T19:47:16.629343+00:00",
+    "ticker": "SPXS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 27.1821,
+    "stop_loss": 24.73938,
+    "target1": 30.113364,
+    "target2": 32.06754,
+    "target3": 34.998805,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.977088,
+    "vol_ratio": 2.04,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.0+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 39.30045,
+      "dollar_risk": 96.0,
+      "notional": 1068.27,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-05T19:47:18.509434+00:00",
+    "ticker": "TECS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 81.445,
+    "stop_loss": 68.925198,
+    "target1": 96.468762,
+    "target2": 106.484603,
+    "target3": 121.508365,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 5.007921,
+    "vol_ratio": 2.29,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 7.667853,
+      "dollar_risk": 96.0,
+      "notional": 624.51,
       "account": "stocks",
       "leverage": 4
     }
