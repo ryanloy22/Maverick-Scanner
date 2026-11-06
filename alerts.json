@@ -8492,5 +8492,121 @@
       "account": "stocks",
       "leverage": 4
     }
+  },
+  {
+    "alerted_at": "2026-11-06T00:34:31.450229+00:00",
+    "ticker": "SQQQ",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 49.549999,
+    "stop_loss": 43.247111,
+    "target1": 57.113466,
+    "target2": 62.155777,
+    "target3": 69.719243,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 2.521155,
+    "vol_ratio": 2.25,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.2+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 15.231111,
+      "dollar_risk": 96.0,
+      "notional": 754.7,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-06T00:34:32.406220+00:00",
+    "ticker": "SOXS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 81.220001,
+    "stop_loss": 63.584928,
+    "target1": 102.382089,
+    "target2": 116.490147,
+    "target3": 137.652235,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 7.054029,
+    "vol_ratio": 1.63,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.6+2",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 5.443697,
+      "dollar_risk": 96.0,
+      "notional": 442.14,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-06T00:34:33.346185+00:00",
+    "ticker": "SPXS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 27.780001,
+    "stop_loss": 25.317673,
+    "target1": 30.734793,
+    "target2": 32.704655,
+    "target3": 35.659448,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 0.984931,
+    "vol_ratio": 2.49,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.5+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 38.987506,
+      "dollar_risk": 96.0,
+      "notional": 1083.07,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-06T00:34:34.913066+00:00",
+    "ticker": "TECS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 84.699997,
+    "stop_loss": 72.096266,
+    "target1": 99.824474,
+    "target2": 109.907458,
+    "target3": 125.031935,
+    "score": 9,
+    "rr_ratio": 1.2,
+    "atr": 5.041492,
+    "vol_ratio": 3.16,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x3.2+3",
+      "TrendAlign+2",
+      "VolExpand+1"
+    ],
+    "position": {
+      "units": 7.616792,
+      "dollar_risk": 96.0,
+      "notional": 645.14,
+      "account": "stocks",
+      "leverage": 4
+    }
   }
 ]
