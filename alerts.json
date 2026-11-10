@@ -2299,7 +2299,10 @@
       "notional": 636.99,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-10T19:33:27.895254+00:00",
+    "close_price": 120.599998
   },
   {
     "alerted_at": "2026-09-03T21:45:44.405153+00:00",
