@@ -8279,7 +8279,10 @@
       "notional": 721.78,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-19T20:21:39.000680+00:00",
+    "close_price": 2.885
   },
   {
     "alerted_at": "2026-11-04T19:38:08.510677+00:00",
@@ -8659,5 +8662,89 @@
     "status": "stopped",
     "closed_at": "2026-11-11T19:27:42.928521+00:00",
     "close_price": 66.32
+  },
+  {
+    "alerted_at": "2026-11-19T20:21:41.058110+00:00",
+    "ticker": "SPXS",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 29.616301,
+    "stop_loss": 26.505587,
+    "target1": 33.349156,
+    "target2": 35.837727,
+    "target3": 39.570583,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 1.244285,
+    "vol_ratio": 1.33,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.3+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 30.861091,
+      "dollar_risk": 96.0,
+      "notional": 913.99,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-19T20:21:43.063647+00:00",
+    "ticker": "YANG",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 38.470001,
+    "stop_loss": 35.058719,
+    "target1": 42.56354,
+    "target2": 45.292566,
+    "target3": 49.386104,
+    "score": 7,
+    "rr_ratio": 1.2,
+    "atr": 1.364513,
+    "vol_ratio": 1.61,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x1.6+2",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 28.141911,
+      "dollar_risk": 96.0,
+      "notional": 1082.62,
+      "account": "stocks",
+      "leverage": 4
+    }
+  },
+  {
+    "alerted_at": "2026-11-19T20:21:47.697330+00:00",
+    "ticker": "GME",
+    "type": "stock/etf",
+    "direction": "LONG",
+    "entry": 27.139999,
+    "stop_loss": 24.579537,
+    "target1": 30.212554,
+    "target2": 32.260924,
+    "target3": 35.333478,
+    "score": 8,
+    "rr_ratio": 1.2,
+    "atr": 1.024185,
+    "vol_ratio": 2.32,
+    "trend_aligned": true,
+    "notes": [
+      "Breakout+3",
+      "VolSurge x2.3+3",
+      "TrendAlign+2"
+    ],
+    "position": {
+      "units": 37.493231,
+      "dollar_risk": 96.0,
+      "notional": 1017.57,
+      "account": "stocks",
+      "leverage": 4
+    }
   }
 ]
