@@ -8779,7 +8779,10 @@
       "notional": 623.19,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:00.510964+00:00",
+    "close_price": 45.939999
   },
   {
     "alerted_at": "2026-11-20T19:52:53.442005+00:00",
@@ -8807,7 +8810,10 @@
       "notional": 901.06,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:00.674041+00:00",
+    "close_price": 28.32
   },
   {
     "alerted_at": "2026-11-20T19:52:54.806874+00:00",
@@ -8835,7 +8841,10 @@
       "notional": 515.82,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:01.030938+00:00",
+    "close_price": 76.419998
   },
   {
     "alerted_at": "2026-11-20T19:52:56.057752+00:00",
@@ -8891,7 +8900,10 @@
       "notional": 616.02,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:01.459484+00:00",
+    "close_price": 45.939999
   },
   {
     "alerted_at": "2026-11-21T18:58:51.391507+00:00",
@@ -8920,7 +8932,10 @@
       "notional": 879.61,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:01.655503+00:00",
+    "close_price": 28.32
   },
   {
     "alerted_at": "2026-11-21T18:58:53.023126+00:00",
@@ -8948,7 +8963,10 @@
       "notional": 514.93,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:01.851264+00:00",
+    "close_price": 76.419998
   },
   {
     "alerted_at": "2026-11-21T18:58:54.420776+00:00",
@@ -9032,7 +9050,10 @@
       "notional": 616.02,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:02.525359+00:00",
+    "close_price": 45.939999
   },
   {
     "alerted_at": "2026-11-22T03:30:45.267377+00:00",
@@ -9061,7 +9082,10 @@
       "notional": 879.61,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:02.716936+00:00",
+    "close_price": 28.32
   },
   {
     "alerted_at": "2026-11-22T03:30:46.650033+00:00",
@@ -9089,7 +9113,10 @@
       "notional": 514.93,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:02.908707+00:00",
+    "close_price": 76.419998
   },
   {
     "alerted_at": "2026-11-22T03:30:47.767205+00:00",
@@ -9173,7 +9200,10 @@
       "notional": 616.02,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:03.422778+00:00",
+    "close_price": 45.939999
   },
   {
     "alerted_at": "2026-11-23T00:25:41.765443+00:00",
@@ -9202,7 +9232,10 @@
       "notional": 879.61,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:03.616494+00:00",
+    "close_price": 28.32
   },
   {
     "alerted_at": "2026-11-23T00:25:43.060651+00:00",
@@ -9230,7 +9263,10 @@
       "notional": 514.93,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-23T23:42:03.806205+00:00",
+    "close_price": 76.419998
   },
   {
     "alerted_at": "2026-11-23T00:25:44.256018+00:00",
