@@ -9022,7 +9022,10 @@
       "notional": 610.53,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-25T21:29:18.811676+00:00",
+    "close_price": 49.939999
   },
   {
     "alerted_at": "2026-11-22T03:30:43.831487+00:00",
@@ -9172,7 +9175,10 @@
       "notional": 610.53,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-25T21:29:19.116599+00:00",
+    "close_price": 49.939999
   },
   {
     "alerted_at": "2026-11-23T00:25:40.497766+00:00",
@@ -9322,6 +9328,9 @@
       "notional": 610.53,
       "account": "stocks",
       "leverage": 4
-    }
+    },
+    "status": "stopped",
+    "closed_at": "2026-11-25T21:29:19.512238+00:00",
+    "close_price": 49.939999
   }
 ]
